@@ -42,7 +42,7 @@ function App() {
         id: uuidv4(),
         todo,
         isCompleted: false,
-        timestamp: `${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })} - ${new Date().toLocaleDateString()}`, // Time first, then date
+        timestamp: `${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })} , ${new Date().toLocaleDateString()}`, // Time first, then date
       };
       setTodos([...todos, newTodo]);
       setTodo("");
