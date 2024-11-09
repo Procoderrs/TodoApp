@@ -66,7 +66,7 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="todolist mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-[#f7f8ff] min-h-[100vh] md:w-[50%]">
+      <div className="todolist mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-[#f7f8ff] min-h-[100vh] md:w-[60%]">
         <h1 className='font-black text-[#666978] text-center text-3xl'>TODO LIST</h1>
         <div className="addTodo my-5 flex flex-col gap-4">
           <h2 className='text-2xl font-medium bg-[#616fed] max-w-40 text-center p-2 rounded-md text-white'>Add Task</h2>
@@ -82,7 +82,7 @@ function App() {
           <div className="todos">
             {todos.length === 0 && <div className='m-5 text-xl font-bold  text-[#666978] text-center'>No Todos to display</div>}
             {todos.map(item => (
-              <div key={item.id} className="todo flex my-3 justify-between p-4 bg-white rounded-md text-lg">
+              <div key={item.id} className="todo flex my-3 justify-between p-2 bg-white rounded-md text-lg">
                 <div className='flex flex-col gap-2'>
                   <div className='flex gap-5'>
                     <input className='checkbox ' type="checkbox"
