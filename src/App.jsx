@@ -82,7 +82,7 @@ function App() {
           <div className="todos">
             {todos.length === 0 && <div className='m-5 text-xl font-bold  text-[#666978] text-center'>No Todos to display</div>}
             {todos.map(item => (
-              <div key={item.id} className="todo flex my-3 justify-between p-6 bg-white rounded-md text-lg">
+              <div key={item.id} className="todo flex my-3 justify-between p-4 bg-white rounded-md text-lg">
                 <div className='flex flex-col gap-2'>
                   <div className='flex gap-5'>
                     <input className='checkbox ' type="checkbox"
@@ -94,8 +94,8 @@ function App() {
                   </div>
                 </div>
                 <div className="buttons flex h-full  p-4">
-                  <button onClick={(e) => handleEdit(e, item.id)} className='bg-slate-200 p-4 py-2 text-xl font-bold rounded-md mx-1 text-[#666978]'><FontAwesomeIcon icon={faEdit} /></button>
-                  <button onClick={(e) => handleDelete(e, item.id)} className='bg-slate-200 p-4 py-1 text-xl font-bold text-[#666978] rounded-md mx-1'><FontAwesomeIcon icon={faTrash} /></button>
+                  <button onClick={(e) => handleEdit(e, item.id)} className='bg-slate-200 p-3 py-1 text-xl font-bold rounded-md mx-1 text-[#666978]'><FontAwesomeIcon icon={faEdit} /></button>
+                  <button onClick={(e) => handleDelete(e, item.id)} className='bg-slate-200 p-3 py-1 text-xl font-bold text-[#666978] rounded-md mx-1'><FontAwesomeIcon icon={faTrash} /></button>
                 </div>
               </div>
             ))}
